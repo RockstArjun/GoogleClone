@@ -1,0 +1,174 @@
+/*
+Name:-- Arjun Chauhan
+github:-- https://github.com/RockstArjun
+instagram:-- https://instagram.com/python.programe
+linkedin:- https://linkedin.com/in/arjun-chauhan-20b9aa217
+*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+/* Classes Css */
+.home-body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+}
+.home{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    background-image: url('../../assests/bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.upper{
+    flex-basis: 95%;
+}
+.lower{
+    display: flex;
+    flex-basis: 5%;
+    background-color: #171717;
+    justify-content: center;
+}
+.navyBar{
+    display: flex;
+    height: 50px;
+    margin: 10px;
+    border-radius: 10px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* ID Css */
+#ul{
+    display: flex;
+    margin-right: 20px;
+}
+#li{
+    list-style-type: none;
+    color: rgb(0, 0, 0);
+    margin-left: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+#li:hover{
+    text-decoration: underline;
+    transform: scale(1.1);
+}
+#li-img{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin-left: 50px;
+    background-color: #3e3737;
+    border-radius: 200px;
+    width: 40px;
+    height: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+#li-img:hover{
+    transform: scale(1.1);
+}
+a{
+    text-decoration: none;
+    color: tomato;
+}
+#logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0px 20px 0px 20px;
+}
+
+/* search */
+.form{
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    
+}
+.none{
+    display: none;
+}
+.search-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    height: 44px;
+    background: #202124;
+    box-shadow: none;
+    border-radius: 24px;
+    margin: 0 auto;
+    width: 440px;
+    max-width: 584px;
+}
+.search-body:hover{
+    border: none;
+    box-shadow: 2px 1px 5px #000
+}
+#input[type=text]{
+    height: 35px;
+    width: 355px;
+    background-color: #3331;
+    text-decoration: none;
+    border: none;
+    font-size: 20px;
+    color: white;
+    margin-left: 15px;
+    transition: ease-in-out, width .35s ease-in-out;
+}
+#input[type=text]:focus{
+    outline: none;
+    background-color: #3331;
+}
+#btn{
+    background-color: #3331;
+    border: none;
+    cursor: pointer;
+}
+#btn:hover{
+    background-color: #202124;
+}
+#btn img{
+    height: 20px;
+    width: 20px;
+}
+#glogo{
+    height: 30px;
+    width: 30px;
+}
+.lower h3{
+    color: white;
+    padding-top: 2px;
+    font-size: 15px
+}
+
+/* media query  85*/
+@media screen and (max-width:640px) {
+    #logo img{
+        height: 150px;
+        width: 320px;
+    }
+}
+@media screen and (max-width:450px) {
+    #logo img{
+        height: 100px;
+        width: 213.333px;
+    }
+    .search-body{
+        width:220px
+    }
+    #input[type=text]{
+        width: 135px;
+    }
+}
+@media screen and (max-width:360px) {
+    .lower h3{
+        font-size: 12px;
+    }
+}

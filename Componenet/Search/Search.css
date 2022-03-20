@@ -1,0 +1,146 @@
+/*
+Name:-- Arjun Chauhan
+github:-- https://github.com/RockstArjun
+instagram:-- https://instagram.com/python.programe
+linkedin:- https://linkedin.com/in/arjun-chauhan-20b9aa217
+*/
+.seb{
+    position: absolute;
+    margin: 0;
+    padding:0 ;
+    height: 100%;
+    width:100%;
+    background-color: #202124;
+}
+.upperpad-search{
+    display: flex;
+    height: 80px;
+    width: 100%;
+    align-items: center;
+    position: fixed;
+    background-color: #202124;
+    border-bottom: 2px solid #767676;
+}
+.upperpad-search h1{
+    display: inline-block;
+    color: white;
+    margin-left: 20px;
+    font-size: 30px;
+}
+.resultOfSearch{
+    display: flex;
+   justify-content: center;
+    margin-top: 80px;
+    width: 100%;
+    background-color: #202124;
+}
+.allResult{
+    display: flex;
+    flex-direction: column;
+    margin:0px 10px 0px 10px;
+}
+#div{
+    width:100%;
+    margin: 10px 0px 10px 0px;
+}
+
+
+/*  */
+.Sform{
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    margin-left: 100px;
+    margin-top: 5px;
+}
+.none{
+    display: none;
+}
+.Ssearch-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    height: 44px;
+    background: #202124;
+    box-shadow: none;
+    border-radius: 24px;
+    margin: 0 auto;
+    width: 440px;
+    max-width: 584px;
+}
+.Ssearch-body:hover{
+    border: none;
+    box-shadow: 2px 1px 5px #000
+}
+#Sinput[type=text]{
+    height: 35px;
+    width: 355px;
+    background-color: #3331;
+    text-decoration: none;
+    border: none;
+    font-size: 20px;
+    color: white;
+    margin-left: 15px;
+    transition: ease-in-out, width .35s ease-in-out;
+}
+#Sinput[type=text]:focus{
+    outline: none;
+    background-color: #3331;
+}
+#Sbtn{
+    background-color: #3331;
+    border: none;
+    cursor: pointer;
+}
+#Sbtn:hover{
+    background-color: #202124;
+}
+#Sbtn img{
+    height: 20px;
+    width: 20px;
+}
+#Sglogo{
+    height: 30px;
+    width: 30px;
+}
+#div-h2,#div-p{
+    color: #fff;
+}
+#div-a{
+    color: rgb(44, 44, 164);
+    margin-bottom:2px 0px 3px 0px;
+}
+
+/*  */
+input:-webkit-autofill {
+    box-shadow:0 0 0 50px #202124 inset;
+    -webkit-box-shadow:0 0 0 50px #202124 inset;
+    -webkit-text-fill-color: #fff;
+}
+input:-webkit-autofill:focus {
+    box-shadow:0 0 0 50px #202124 inset;
+    -webkit-box-shadow:0 0 0 50px #202124 inset;
+    -webkit-text-fill-color: #fff;
+}
+
+/* media query */
+@media screen and (max-width:700px) {
+    .upperpad-search{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .Ssearch-body{
+        width:220px
+    }
+    #Sinput[type=text]{
+        width: 135px;
+    }
+    #h1{
+        display: none;
+    }
+    .Sform{
+        margin-left: 0px;
+    }
+}
